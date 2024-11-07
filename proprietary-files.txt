@@ -1,5 +1,5 @@
 # All unpinned blobs are extracted from gauguinin-user 12 RKQ1.200826.002 V14.0.3.0.SJSINXM release-keys.
-# FP4 : Fairphone/FP4eea/FP4:13/TKQ1.230127.002/TP1V:user/release-keys
+# oplus_ossi : oplus ossi 13 TP1A.220905.001 1698164373097:user release-keys
 # gauguin_CN: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSCNXM release-keys
 # gauguin_GL: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSMIXM release-keys
 
@@ -128,10 +128,10 @@ vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
-# CACert - from FP4
-vendor/app/CACertService/CACertService.apk|0adef425b5c1d8f7805177c78d034895d65dcb0a
+# CACert - from oplus_ossi
+vendor/app/CACertService/CACertService.apk|f23eb42d6205efc78629882251134f913ea5732d
 vendor/lib64/libcacertclient.so|d73c1651d2a66a595a65edc43d5605501bc2fd73
-vendor/lib64/libjnihelper.so|4add738a52a07cad2e999ea4a6c540bd179527ee
+vendor/lib64/libjnihelper.so|3070cc2164619a58684b6f4061c3318e135cc3f1
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so|f8f65b093fe367ffe0a8f23d7c7ff88ec09b80c5
 
 # Camera
@@ -486,16 +486,17 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.lito.so
 
-# Display - from FP4
+# Display - from oplus_ossi
 vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
 vendor/lib64/libdisplayqos.so|15701f18257c43be5657bbd867a8acf1f469e373
-vendor/lib64/libdisplayskuutils.so|ac4f2231f098c03824844799106685bf81f97782
+vendor/lib64/libdisplayskuutils.so|3ddb2ffe55aa9aef686cf3be00ae5e0d1d8f9d93
+vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
 vendor/lib64/libqseed3.so|c9fb729cf48278d0c87d27c0af17ae3a8ccb1bf7
-vendor/lib64/libsdm-color.so|d4e008d6dfca0b5f9bbf5e3b583f33e2606460e4
+vendor/lib64/libsdm-color.so|b153b110d1f60e4e759506a72f35312dc0bac25d
 vendor/lib64/libsdm-colormgr-algo.so|1fb7f3cb11557bbf677afb5d6eda0e4e9fd3ac58
-vendor/lib64/libsdm-diag.so|d602a56edde3fb2cf7de81d5ab18ef2ef3cf3814
-vendor/lib64/libsdm-disp-vndapis.so|2f1abd975b1f1dbabcc410e56c29ac296adcc411
-vendor/lib64/libsdmextension.so|f2ab90d1880fd30a6673110ad9f36cf93aebd5b9
+vendor/lib64/libsdm-diag.so|57e8b57e52b98a0a151434414756fcf91147a511
+vendor/lib64/libsdm-disp-vndapis.so|fd0b0beac164c92bfa012dbc059cb50cdde2dec6
+vendor/lib64/libsdmextension.so|54fd1be1437dbe381ff9dd7d31487befea352c07
 vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 
 # Display Calibration
@@ -506,12 +507,14 @@ vendor/etc/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.xml
 vendor/firmware/NT36xxx_MP_Setting_Criteria_5935.csv
 vendor/firmware/NT36xxx_MP_Setting_Criteria_5937.csv
 
-# Display Postprocessing - from FP4
-vendor/bin/hw/vendor.display.color@1.0-service|1fa47c2d3fff52c362848c59dbc40b4073c59ea9
+# Display Postprocessing - from oplus_ossi
+vendor/bin/hw/vendor.display.color@1.0-service|9c77c3655befc1c53f842e1b9605b83e3dc64259
 vendor/bin/ppd|c478fa8957564bf1b2649b6ba80c07f72b0b318f
-vendor/lib64/libdpps.so|02538edc4f214b3d6018031aa8460efbc1760223
-vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/lib64/libdisp-aba.so|894b0fe1ace5effb471ebb7437cd590a096e47d8
+vendor/bin/qdcmss|536c34abfbf7833df440bfcd264bacdc88318067
+vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f4
+vendor/lib64/libdisp-aba.so|902839da31464e54bd4756747db2dd7ad867484f
+vendor/lib64/libdpps.so|b70aaf5b43c64863d83d039e848e282cd801d7fd
 vendor/lib64/vendor.display.color@1.0.so|f1f7d91884c8e3c9ea300e67f5df91057094de40
 vendor/lib64/vendor.display.color@1.1.so|e7ab973147c3e03e31efacee13e8d8a9c841eb7b
 vendor/lib64/vendor.display.color@1.2.so|fe9ec904459b7675297e5ef6883ae98b438fb77f
@@ -617,29 +620,29 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# GNSS - from FP4
-vendor/bin/loc_launcher|f0b95b7d523d2785a3090c2598c4bbd6170f1ba1
-vendor/bin/lowi-server|5dac21643422cc9f62aad5c79e0110241948f031
-vendor/bin/xtra-daemon|f9af378bf52e0e177ab9c91c4792c202fa8f25ed
+# GNSS - from oplus_ossi
+vendor/bin/loc_launcher|07f734a8124a4e58790fbfedd4abab0b4259669b
+vendor/bin/lowi-server|bd90f2aa61d5d5d6769eb74947787d517cd21e8a
+vendor/bin/xtra-daemon|8025436248e48de24283a9d33cef58132223fac3
 vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
-vendor/lib64/libcdfw.so|76aa65aea92ef92e0c4e4a6700c049d5de549c18
+vendor/lib64/libcdfw.so|879ec0095789187243316666f584c1cdbe44c894
 vendor/lib64/libcdfw_remote_api.so|e43217af385097ea8d939a7c0cc60c3e092ad086
-vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|0f68732435cef39376a7b8db12e676a5f4394a49
+vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|b7765e68a29e36cfa76fdab2777352765504a6f5
 vendor/lib64/libaoa.so|6aacf99d44a05c80bf77ee01ac21da20ce98368d
-vendor/lib64/libdataitems.so|9b344d4f91166cf6c9ccd0acceb5df08c9c4c650
+vendor/lib64/libdataitems.so|3560835003c52b01cb80ca71da379c05db503d03
 vendor/lib64/libgdtap.so|500675e4bee26627cda1f1cc87b8a6838f65b7a7
-vendor/lib64/libizat_client_api.so|4a982ffe253557b58934df0e9278f97fef5862f2
-vendor/lib64/libizat_core.so|0f809a966fac50831d5ac7a6d379ffd2afc572fb
-vendor/lib64/liblbs_core.so|83ee6243715eb7261beca1b5a44dc5221ecdc028
-vendor/lib64/libloc_api_v02.so|17dd11173437bf194f87154144d3a65705c47a9a
-vendor/lib64/libloc_api_wds.so|0f506584fe78cc1be3cf0f022b4314d2575796b1
-vendor/lib64/liblocationservice.so|148aaee8ce013debbd2571679bb1a81800eeb270
-vendor/lib64/liblocationservice_glue.so|5087838ca49c474063785ad361d35f2cead2c873
-vendor/lib64/liblowi_client.so|b388eefaf096fccb254302b7dc0bac29f3db6f6b
-vendor/lib64/liblowi_wifihal.so|0e55bc598b3bbbeba4bd8bdf000df38131614a5b
+vendor/lib64/libizat_client_api.so|edd07665db8812e973885a21ba37452a82747b25
+vendor/lib64/libizat_core.so|12d27e0a174453374d723991140dffb66dbe8526
+vendor/lib64/liblbs_core.so|fd3504917e83da2455d42ff49261df121a2742a6
+vendor/lib64/libloc_api_v02.so|dd6e95964b34b94255b5d9632ac27afb5521a9cb
+vendor/lib64/libloc_api_wds.so|b8fb1304121d7e4dfcb177c9adea1e536d8950b7
+vendor/lib64/liblocationservice.so|20ccf04173c5cc661704a3d6f7a3bd9794b04339
+vendor/lib64/liblocationservice_glue.so|fb85f42f1849bb9adad350986c7de13e999dd0f9
+vendor/lib64/liblowi_client.so|f756403e59cb00d5c8e1425181aa3ea2b60f91ff
+vendor/lib64/liblowi_wifihal.so|6dd3b26febd94ab2c11f5f79d346210348fc8515
 vendor/lib64/libqcc_file_agent.so|0345fc438536bc11f3e65999e0b750efb19ba9f9
 vendor/lib64/libqdma_file_agent.so|9c9a03ea1507a247e9d736b4073781d893f865f4
-vendor/lib64/libslimclient.so|92d00c9a720d53309c10766a8d72a6c3425a95b7
+vendor/lib64/libslimclient.so|f55787e99718fa135f0f14c83ba160331146d37e
 vendor/lib64/libxtadapter.so|b46b0ad003e9738e7ee9d6e51722f63505c47323
 vendor/lib64/vendor.qti.gnss@1.0.so|50f716e9e4295a18b93fc674f2b6c132053a8246
 vendor/lib64/vendor.qti.gnss@1.1.so|3b771c3bb5221fb1b27fcbb355c339e582771616
@@ -692,6 +695,13 @@ vendor/firmware/a615_zap.elf
 vendor/firmware/a615_zap.mdt
 vendor/firmware/a619_gmu.bin
 vendor/firmware/a630_sqe.fw
+vendor/firmware/a650_gmu.bin
+vendor/firmware/a650_sqe.fw
+vendor/firmware/a650_zap.b00
+vendor/firmware/a650_zap.b01
+vendor/firmware/a650_zap.b02
+vendor/firmware/a650_zap.elf
+vendor/firmware/a650_zap.mdt
 
 # Graphics (Vulkan)
 vendor/lib/hw/vulkan.adreno.so
@@ -761,6 +771,13 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 
 # IPA Firmware
 vendor/etc/init/ipa_fws.rc
+vendor/firmware/ipa_fws.b00
+vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.b02
+vendor/firmware/ipa_fws.b03
+vendor/firmware/ipa_fws.b04
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
 vendor/firmware/lagoon_ipa_fws.b00
 vendor/firmware/lagoon_ipa_fws.b01
 vendor/firmware/lagoon_ipa_fws.b02
