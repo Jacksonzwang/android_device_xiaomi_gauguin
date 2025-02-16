@@ -599,7 +599,7 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GNSS - from oplus_ossi
 vendor/bin/loc_launcher|07f734a8124a4e58790fbfedd4abab0b4259669b
-vendor/bin/lowi-server|bd90f2aa61d5d5d6769eb74947787d517cd21e8a
+vendor/bin/lowi-server;DISABLE_CHECKELF|bd90f2aa61d5d5d6769eb74947787d517cd21e8a
 vendor/bin/xtra-daemon|8025436248e48de24283a9d33cef58132223fac3
 vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
 vendor/lib64/libcdfw.so|879ec0095789187243316666f584c1cdbe44c894
